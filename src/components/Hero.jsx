@@ -11,7 +11,7 @@ const Hero = () => {
     <Box
       sx={{
         position: 'relative',
-        height: '100vh',
+        minHeight: `calc(100vh - ${toolbarHeight}px)`,
         color: 'white',
         textAlign: 'center',
         display: 'flex',
@@ -45,7 +45,7 @@ const Hero = () => {
           }}
         />
       </Box>
-      <Container maxWidth="md" sx={{ marginTop: toolbarHeight }}>
+      <Container maxWidth="md" sx={{ marginTop: 0 }}>
         <Typography 
           variant="h2" 
           component="h1" 
