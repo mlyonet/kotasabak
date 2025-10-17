@@ -7,7 +7,7 @@ const Footer = () => {
     <Box sx={{ py: 6, backgroundColor: 'primary.main', color: 'white' }}>
       <Container maxWidth="lg">
         <Grid container spacing={4} alignItems="center">
-          <Grid item xs={12} md={4}>
+          <Grid item sx={{ gridColumn: { xs: 'span 12', md: 'span 4' } }}>
             <Typography variant="h6" component="div">
               Kota Sabak
             </Typography>
@@ -15,7 +15,7 @@ const Footer = () => {
               Building a Legacy of Prosperity and Resilience.
             </Typography>
           </Grid>
-          <Grid item xs={12} md={4} sx={{ textAlign: { xs: 'center', md: 'center' } }}>
+          <Grid item sx={{ gridColumn: { xs: 'span 12', md: 'span 4' }, textAlign: { xs: 'center', md: 'center' } }}>
             <IconButton href="https://www.facebook.com/kotasabak" target="_blank" color="inherit">
               <Facebook />
             </IconButton>
@@ -26,7 +26,7 @@ const Footer = () => {
               <LinkedIn />
             </IconButton>
           </Grid>
-          <Grid item xs={12} md={4} sx={{ textAlign: { xs: 'center', md: 'right' } }}>
+          <Grid item sx={{ gridColumn: { xs: 'span 12', md: 'span 4' }, textAlign: { xs: 'center', md: 'right' } }}>
             <Typography variant="body2">
               {'Copyright © '}
               Kota Sabak Development {new Date().getFullYear()}

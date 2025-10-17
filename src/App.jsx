@@ -1,5 +1,5 @@
 import React from 'react';
-import { ThemeProvider, CssBaseline } from '@mui/material';
+import { ThemeProvider, CssBaseline, Box } from '@mui/material';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import theme from './theme';
 import MainLayout from './layouts/MainLayout';
@@ -14,6 +14,7 @@ function App() {
     <ThemeProvider theme={theme}>
       <ParallaxProvider>
         <CssBaseline />
+        <Box id="top" />
         <MainLayout>
           <Hero />
           <Vision />
