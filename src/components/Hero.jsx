@@ -1,9 +1,11 @@
 import React from 'react';
-import { Box, Typography, Button, Container } from '@mui/material';
+import { Box, Typography, Button, Container, useTheme } from '@mui/material';
 import { useParallax } from 'react-scroll-parallax';
 
 const Hero = () => {
   const { ref } = useParallax({ speed: -15 });
+  const theme = useTheme();
+  const toolbarHeight = theme.mixins.toolbar.minHeight;
 
   return (
     <Box
@@ -43,7 +45,7 @@ const Hero = () => {
           }}
         />
       </Box>
-      <Container maxWidth="md">
+      <Container maxWidth="md" sx={{ marginTop: toolbarHeight }}>
         <Typography 
           variant="h2" 
           component="h1" 
