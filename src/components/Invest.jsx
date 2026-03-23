@@ -41,6 +41,15 @@ const Invest = () => {
                 ),
               }}
             />
+            <TextField
+              id="honeypot"
+              name="honeypot"
+              label="Leave this field blank"
+              variant="outlined"
+              sx={{ display: 'none' }} // Hide the field visually
+              tabIndex="-1" // Prevent keyboard navigation
+              autoComplete="off" // Prevent browser autofill
+            />
             <Button type="submit" variant="contained" color="primary" size="large" disabled>
               Register Your Interest
             </Button>
